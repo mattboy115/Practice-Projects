@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<head>
+<link rel="shortcut icon" type="image/png" href="http://i813.photobucket.com/albums/zz56/mattboy115/favicon.png"/>
+<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+<title>The Works of Matthew Lee</title>
+<style>
+	#background {
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		background-image: url(http://www.redpepperwallpaper.com/wp_highres/hi-tech/WPBEU9WF.jpg);
+		z-index: -1;
+		background-size: cover;
+	}
+	header {
+		width: 102%;
+		height: 150px;
+		background-image: url(http://i813.photobucket.com/albums/zz56/mattboy115/headerbg.png);
+		margin-left: -20px;
+		margin-top: 20px;
+	}
+	#titleimg {
+		height: 160px;
+		margin-left: 30px;
+		margin-top: -20px;
+	}
+	#top {
+		width: 840px;
+		clear: both;
+		margin-bottom: 40px;
+	}
+	#left {
+		height: 700px;
+		width: 400px;
+		background: white;
+		position: relative;
+		float: left;
+		margin-right: 20px;
+	}
+	#right {
+		height: 800px;
+		width: 400px;
+		background: white;
+		position: relative;
+		float: left;
+		margin-left: 20px;
+	}
+	#everythingelse {
+		position: relative;
+		top: 40px;
+		margin: 0 auto;
+		background: rgba(255,255,255,0.5);
+		padding: 40px;
+		width: 840px;
+		height: 1200px;
+		border-radius: 2px;
+	}
+	#searchbar {
+		float: right;
+		margin-top: 45px;
+		margin-right: 40px;
+	}
+	#searchbutton {
+		height: 40px;
+		width: 100px;
+		border: none;
+		background-color: red;
+		color: white;
+		-moz-box-shadow:    inset 0 0 10px #000000;
+   		-webkit-box-shadow: inset 0 0 10px #000000;
+   		box-shadow:         inset 0 0 10px #000000;
+   		font-family: arial;
+   		font-size: 25px;
+   		font-weight: bolder;
+   		letter-spacing: -1px;
+	}
+	input {
+		height: 40px;
+		width: 250px;
+		font-family: arial;
+		font-size: 25px;
+		-moz-box-shadow:    inset 0 0 10px #000000;
+   		-webkit-box-shadow: inset 0 0 10px #000000;
+   		box-shadow:         inset 0 0 10px #000000;
+   		border-radius: 0px;
+   		border: none;
+	}
+	#socialbar {
+		float: right;
+		list-style-type: none;
+		display: block;
+		margin-right: 40px;
+		background: white;
+		border: 5px solid black;
+		border-radius: 12px;
+		padding: 15px;
+		position: relative;
+		position: fixed;
+		margin-top: 30px;
+	}
+	#social {
+		height: 50px;
+		margin-top: 10px;
+	}
+	#navbar {
+		position: relative;
+		clear: both;
+		float: right;
+		color: white;
+		font-family: 'Merriweather Sans', sans-serif;
+		font-size: 32px;
+		margin-right: 25px;
+		margin-top: -73px;
+		text-shadow: 4px 4px 7px #000000;
+
+	}
+	#navlist li {
+		list-style: none;
+		display: inline;
+		clear: both;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	#navlist li a {
+		text-decoration: none;
+		color: white;
+	}
+	#cdrop {
+		float: left;
+		position: relative;
+		position: absolute;
+		background: gray;
+		border: black solid 3px;
+		width: 350px;
+		z-index: 1;
+		visibility: hidden;
+	}
+	#comics:hover #cdrop {
+		visibility: visible;
+	}
+	#cdrop li {
+		font-family: 'Source Sans Pro', sans-serif;
+		margin-left: -20px;
+		display: block;
+		text-align: left;
+		text-shadow: none;
+		line-height: 60px;
+		letter-spacing: -2px;
+	}
+	#cdrop li:hover {
+		background-color: #AEAEAE;
+	}
+	#vdrop {
+		float: left;
+		position: relative;
+		position: absolute;
+		background: gray;
+		border: black solid 3px;
+		margin-left: 185px;
+		width: 280px;
+		z-index: 1;
+		visibility: hidden;
+	}
+	#videos:hover #vdrop {
+		visibility: visible;
+	}
+	#vdrop li {
+		font-family: 'Source Sans Pro', sans-serif;
+		margin-left: -20px;
+		display: block;
+		text-align: left;
+		text-shadow: none;
+		line-height: 60px;
+		letter-spacing: -2px;
+	}
+	#vdrop li:hover {
+		background-color: #AEAEAE;
+	}
+	#bdrop {
+		position: relative;
+		position: absolute;
+		background: gray;
+		border: black solid 3px;
+		float: left;
+		margin-left: 520px;
+		width: 260px;
+		z-index: 1;
+		visibility: hidden;
+	}
+	#blogs:hover #bdrop {
+		visibility: visible;
+	}
+	#bdrop li {
+		font-family: 'Source Sans Pro', sans-serif;
+		margin-left: -20px;
+		display: block;
+		text-align: left;
+		text-shadow: none;
+		line-height: 60px;
+		letter-spacing: -2px;
+	}
+	#bdrop li:hover {
+		background-color: #AEAEAE;
+	}
+</style>
+</head>
+
+<body>
+<div id="background"></div>
+<header>
+	<img id= "titleimg" src= "http://i813.photobucket.com/albums/zz56/mattboy115/headertitle.png">
+	<div id="searchbar">
+	<input type="search"></input><button id="searchbutton">Search</button></div>
+	<div id="navbar">
+		<ul id="navlist">
+			<li id="comics">Comics <img height="25px" src="http://i813.photobucket.com/albums/zz56/mattboy115/arrow-1.png">
+				<ul id="cdrop">
+					<li><a target="_blank" href="http://theduckwebcomics.com/Super_Mario_RPG_2/">Super Mario RPG</a></li>
+					<li><a target="_blank" href="http://theduckwebcomics.com/Megamantics/">Megamantics</a></li>
+					<li><a target="_blank" href="http://theduckwebcomics.com/Sonic_Advance_The_Real_Story/">Sonic Advance</a></li>
+					<li><a target="_blank" href="http://theduckwebcomics.com/The_Rube_Goldberg_Machine/">The Rube Goldberg Machine</a></li>
+				</ul>
+			</li>
+			<li id="videos">Videos <img height="25px" src="http://i813.photobucket.com/albums/zz56/mattboy115/arrow-1.png">
+				<ul id="vdrop">
+					<li><a target="_blank" href="https://www.youtube.com/watch?v=X4qNYpuk1bk&list=PLRjYtwVULdDvdbrqqHoaxyQvLadBEFVIt">Short Creepypastas</a></li>
+					<li><a target="_blank" href="https://www.youtube.com/watch?v=BP-KEzJgCaw&list=PLRjYtwVULdDvqBcv4xC2qm37itNYxw10p">Gaming Creepypastas</a></li>
+					<li>Voice Acting Demos</li>
+					<li>Let's Plays</li>
+					<li>Other Videos</li>
+				</ul>
+			</li>
+			<li><a href="#">Gaming Channel</a></li>
+			<li id="blogs">Blogs <img height="25px" src="http://i813.photobucket.com/albums/zz56/mattboy115/arrow-1.png">
+				<ul id="bdrop">
+					<li>Creepypasta Blog</li>
+					<li>Let's Play Blog</li>
+				</ul>
+			</li>
+			<li><a href="#">Contact <img height="25px" src="http://i813.photobucket.com/albums/zz56/mattboy115/arrow-1.png"></a></li>
+	</div>
+	<div id="headerlinks">
+		<ul id="socialbar">
+			<li><img id="social" src="http://egov.eletsonline.com/wp-content/uploads/2014/07/facebook_logo.png"></li>
+			<li><img id="social" src="http://www.lockportconstructioncontractor.com/images/235618_0.png"></li>
+			<li><img id="social" src="http://www.msf.lu/fileadmin/logo/Google_-logo.jpeg"></li>
+			<li><img id="social" src="http://www.wjnlib.org/wp-content/uploads/2014/04/tumblr-logo.png"></li>
+
+		</ul>
+	</div>
+</header>
+
+<div id="everythingelse">
+	<img id="top" src="http://www.bbcamerica.com/doctor-who/wp-content/blogs.dir/18/files/2013/08/Doctorwho_50th-anniversary-thumbnail_01.jpg">
+	<div id="left">
+	</div>
+	<div id="right">
+	</div>
+</div>
+
+</body>
