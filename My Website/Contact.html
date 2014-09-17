@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" type="image/png" href="http://i813.photobucket.com/albums/zz56/mattboy115/favicon.png"/>
+<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+<title>The Works of Matthew Lee</title>
+<style>
+	#background {
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		background-image: url(http://www.redpepperwallpaper.com/wp_highres/hi-tech/WPBEU9WF.jpg);
+		z-index: -1;
+		background-size: cover;
+	}
+	header {
+		width: 102%;
+		height: 150px;
+		background-image: url(http://i813.photobucket.com/albums/zz56/mattboy115/headerbg.png);
+		margin-left: -20px;
+		margin-top: 20px;
+	}
+	#titleimg {
+		height: 160px;
+		margin-left: 30px;
+		margin-top: -20px;
+	}
+	#searchbar {
+		float: right;
+		margin-top: 45px;
+		margin-right: 40px;
+	}
+	#searchbutton {
+		height: 40px;
+		width: 100px;
+		border: none;
+		background-color: red;
+		color: white;
+		-moz-box-shadow:    inset 0 0 10px #000000;
+   		-webkit-box-shadow: inset 0 0 10px #000000;
+   		box-shadow:         inset 0 0 10px #000000;
+   		font-family: arial;
+   		font-size: 25px;
+   		font-weight: bolder;
+   		letter-spacing: -1px;
+	}
+	input {
+		height: 40px;
+		width: 250px;
+		font-family: arial;
+		font-size: 25px;
+		-moz-box-shadow:    inset 0 0 10px #000000;
+   		-webkit-box-shadow: inset 0 0 10px #000000;
+   		box-shadow:         inset 0 0 10px #000000;
+   		border-radius: 0px;
+   		border: none;
+	}
+	#socialbar {
+		float: right;
+		list-style-type: none;
+		display: block;
+		margin-right: 40px;
+		background: white;
+		border: 5px solid black;
+		border-radius: 12px;
+		padding: 15px;
+		position: relative;
+		position: fixed;
+		margin-top: 30px;
+	}
+	#social {
+		height: 50px;
+		margin-top: 10px;
+	}
+	#navbar {
+		position: relative;
+		clear: both;
+		float: right;
+		color: white;
+		font-family: 'Merriweather Sans', sans-serif;
+		font-size: 32px;
+		margin-right: 35px;
+		margin-top: -73px;
+		text-shadow: 4px 4px 7px #000000;
+
+	}
+	#navlist li {
+		list-style: none;
+		display: inline;
+		clear: both;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	#navlist li a {
+		text-decoration: none;
+		color: white;
+	}
+	#cdrop {
+		float: left;
+		position: relative;
+		position: absolute;
+		background: gray;
+		border: black solid 3px;
+		width: 350px;
+		z-index: 2;
+		visibility: hidden;
+	}
+	#comics:hover #cdrop {
+		visibility: visible;
+	}
+	#cdrop li {
+		font-family: 'Source Sans Pro', sans-serif;
+		margin-left: -20px;
+		display: block;
+		text-align: left;
+		text-shadow: none;
+		line-height: 60px;
+		letter-spacing: -2px;
+	}
+	#cdrop li:hover {
+		background-color: #AEAEAE;
+	}
+	#vdrop {
+		float: left;
+		position: relative;
+		position: absolute;
+		background: gray;
+		border: black solid 3px;
+		margin-left: 185px;
+		width: 280px;
+		z-index: 2;
+		visibility: hidden;
+	}
+	#videos:hover #vdrop {
+		visibility: visible;
+	}
+	#vdrop li {
+		font-family: 'Source Sans Pro', sans-serif;
+		margin-left: -20px;
+		display: block;
+		text-align: left;
+		text-shadow: none;
+		line-height: 60px;
+		letter-spacing: -2px;
+	}
+	#vdrop li:hover {
+		background-color: #AEAEAE;
+	}
+	#bdrop {
+		position: relative;
+		position: absolute;
+		background: gray;
+		border: black solid 3px;
+		float: left;
+		margin-left: 365px;
+		width: 260px;
+		z-index: 2;
+		visibility: hidden;
+	}
+	#blogs:hover #bdrop {
+		visibility: visible;
+	}
+	#bdrop li {
+		font-family: 'Source Sans Pro', sans-serif;
+		margin-left: -20px;
+		display: block;
+		text-align: left;
+		text-shadow: none;
+		line-height: 60px;
+		letter-spacing: -2px;
+	}
+	#bdrop li:hover {
+		background-color: #AEAEAE;
+	}
+	#main {
+		position: relative;
+		top: 40px;
+		margin: 0 auto;
+		background: rgba(255,255,255,0.5);
+		padding: 40px;
+		width: 1000px;
+		height: 1000px;
+		border-radius: 2px;
+	}
+	#icons{
+		width: 30%;
+		height: 1009px;
+		background: #333333;
+		position: relative;
+		margin: 0 auto;
+		float: left;
+		display: inline;
+		border: black solid 5px;
+	}
+	#icons img {
+		height: 125px;
+		border-radius: 100px;
+		border: solid black 5px;
+		margin: 0 auto;
+		vertical-align: middle;
+		position: relative;
+		display: block;
+		margin-top: 08px;
+
+	}
+	#display {
+		width: 52%;
+		height: 350px;
+		background: #333333;
+		position: relative;
+		float: left;
+		position: fixed;
+		display: inline;
+		border-bottom-right-radius: 12px;
+		border-top-right-radius: 12px;
+		border: solid black 5px;
+		border-left: none;
+		margin-left: -5px;
+		z-index: 1;
+	}
+	p {
+		margin: 0 auto;
+		color: white;
+		font-family: 'Oswald', sans-serif;
+		font-size: 20px;
+		text-align: center;
+		margin-top: 160px; 
+	}
+	#display div {
+		width: 52%;
+		height: 350px;
+		background: #333333;
+		float: left;
+		position: fixed;
+		display: inline;
+		border-bottom-right-radius: 12px;
+		border-top-right-radius: 12px;
+		border: solid black 5px;
+		border-left: none;
+		margin-top: -195px;
+		z-index: 1;
+		visibility: hidden;
+	}
+	#email:hover #Email {
+		visibility: visible;
+	}
+</style>
+</head>
+
+<body>
+<div id="background"></div>
+<header>
+	<a href="https://605977dfc44006aef5bead28b4585b8a1dd299a4.googledrive.com/host/0B817Egz64pkKQkJxalVNUGs4V28/Matthew%20Lee%20Site"><img id= "titleimg" src= "http://i813.photobucket.com/albums/zz56/mattboy115/headertitle.png"></a>
+	<div id="searchbar">
+	<input type="search"></input><button id="searchbutton">Search</button></div>
+	<div id="navbar">
+		<ul id="navlist">
+			<li id="comics">Comics <img height="25px" src="http://i813.photobucket.com/albums/zz56/mattboy115/arrow-1.png">
+				<ul id="cdrop">
+					<li><a target="_blank" href="http://theduckwebcomics.com/Super_Mario_RPG_2/">Super Mario RPG</a></li>
+					<li><a target="_blank" href="http://theduckwebcomics.com/Megamantics/">Megamantics</a></li>
+					<li><a target="_blank" href="http://theduckwebcomics.com/Sonic_Advance_The_Real_Story/">Sonic Advance</a></li>
+					<li><a target="_blank" href="http://theduckwebcomics.com/The_Rube_Goldberg_Machine/">The Rube Goldberg Machine</a></li>
+				</ul>
+			</li>
+			<li id="videos">Videos <img height="25px" src="http://i813.photobucket.com/albums/zz56/mattboy115/arrow-1.png">
+				<ul id="vdrop">
+					<li><a target="_blank" href="https://www.youtube.com/watch?v=X4qNYpuk1bk&list=PLRjYtwVULdDvdbrqqHoaxyQvLadBEFVIt">Short Creepypastas</a></li>
+					<li><a target="_blank" href="https://www.youtube.com/watch?v=BP-KEzJgCaw&list=PLRjYtwVULdDvqBcv4xC2qm37itNYxw10p">Gaming Creepypastas</a></li>
+					<li><a target="_blank" href="https://www.youtube.com/channel/UCndg66lAonjjRKPJkP9pk8g/videos">Voice Acting Demos</a></li>
+					<li><a target="_blank" href="https://www.youtube.com/watch?v=_0x-2RmKLis&list=UUmShy0u9bBoHkh_P3TcxDJw">Let's Plays</a></li>
+					<li><a target="_blank" title="Rubik's Cube Solve Channel Coming Soon!" href="https://www.youtube.com/watch?v=NuxgkJjRlLI">Coming Soon</a></li>
+				</ul>
+			</li>
+			<li id="blogs">Blogs <img height="25px" src="http://i813.photobucket.com/albums/zz56/mattboy115/arrow-1.png">
+				<ul id="bdrop">
+					<li>Creepypasta Blog</li>
+					<li>Let's Play Blog</li>
+				</ul>
+			</li>
+			<li><a href="#">Gaming Channel</a></li>
+			<li><a href"#">Contact</a></li>
+	</div>
+	<div id="headerlinks">
+		<ul id="socialbar">
+			<li><img id="social" src="http://egov.eletsonline.com/wp-content/uploads/2014/07/facebook_logo.png"></li>
+			<li><img id="social" src="http://www.lockportconstructioncontractor.com/images/235618_0.png"></li>
+			<li><img id="social" src="http://www.msf.lu/fileadmin/logo/Google_-logo.jpeg"></li>
+			<li><img id="social" src="http://www.wjnlib.org/wp-content/uploads/2014/04/tumblr-logo.png"></li>
+
+		</ul>
+	</div>
+</header>
+	
+	<div id="main">
+		<div id="icons">
+			<img id="Email" title="Email" src="http://i813.photobucket.com/albums/zz56/mattboy115/Website%20Images/iconemail.png">
+			<img id="Facebook" title="Facebook" src="http://i813.photobucket.com/albums/zz56/mattboy115/Website%20Images/iconfacebook.png">
+			<img id="Twitter" title="Twitter" src="http://i813.photobucket.com/albums/zz56/mattboy115/Website%20Images/icontwitter.png">
+			<img id="Linkedin" title="Linkedin" src="http://i813.photobucket.com/albums/zz56/mattboy115/Website%20Images/iconlinkedin.png">
+			<img id="Portfolio" title="Portfolio" src="http://i813.photobucket.com/albums/zz56/mattboy115/Website%20Images/iconportfolio.png">
+			<img id="iPhone" title="Phone" src="http://i813.photobucket.com/albums/zz56/mattboy115/Website%20Images/iconphone.png">
+			<img id="iHome" title="Home Address" src="http://i813.photobucket.com/albums/zz56/mattboy115/Website%20Images/iconhome.png">
+		</div>
+		<div id="display"><p>Hover Over the Icons for Information</p>
+			<div id="email"></div>
+			<div id="facebook"></div>
+			<div id="twitter"></div>
+			<div id="linkedin"></div>
+			<div id="portfolio"></div>
+			<div id="phone"></div>
+			<div id="home"></div>
+		</div>
+	</div>
+
+	<div id="footer"></div>
+</body>
+</html>
